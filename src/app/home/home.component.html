@@ -1,0 +1,49 @@
+
+<div class="container">
+  <div class="row my-3">
+
+    <h3>The chart is created from 10k dataset</h3>
+
+    <div class="d-flex">
+      <select class="form-select me-2" style="flex: 1;"
+        [(ngModel)]="category"
+      >
+        <option value="" selected>Select a category</option>
+        <option value="payment">Payment made</option>
+        <option value="age_group">Age group</option>
+        <option value="zip_code_3_digits">Zip code</option>
+        <option value="gender">Gender</option>
+        <option value="ethinicity">Ethinicity</option>
+        <option value="country">Country</option>
+        <option value="race">Race</option>
+        <option value="type_of_admission">Type of admission</option>
+        <!-- <option value="discharge_year">Discharge year</option> -->
+      </select>
+      
+      <button class="btn btn-primary" (click)="handleChange()">Update chart</button>
+    </div>
+  </div>
+
+  <div class="row">
+    <ng-container *ngIf="category !== '' && !loading">
+      <plotly-plot [data]="pie.data" [layout]="pie.layout"></plotly-plot>
+    </ng-container>
+
+    <div class="alert alert-info text-center" *ngIf="category === '' && !loading">
+      <h4>Your data is fetched from API and it's ready, now you can select a category from dropdown to visualize the data</h4>
+    </div>
+    
+    <div class="alert alert-danger text-center" *ngIf="error">
+      <h4>Failed to fetch data</h4>
+      <button class="btn btn-warning" (click)="initData()">Click here to retry</button>
+    </div>
+
+    <div class="text-center" *ngIf="loading">
+      <button class="btn btn-primary" type="button" disabled>
+        <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+        Loading your data...
+      </button>
+    </div>
+
+  </div>
+</div>

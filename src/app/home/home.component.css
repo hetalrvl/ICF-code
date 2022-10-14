@@ -1,0 +1,3 @@
+:host ::ng-deep p.library-p {
+  color: green !important;
+}
