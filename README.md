@@ -11,7 +11,11 @@
 
 Run `npm start` or `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-- Screen shots/Video :-
+### Working Heroku URL-
+ - https://internship-code.herokuapp.com/home
+ 
+
+#### Screen shots/Video :-
 
 <img width="1422" alt="Screen Shot 2022-10-13 at 10 15 09 PM" src="https://user-images.githubusercontent.com/115761635/195746571-274d0204-bded-475b-88d0-6c3b6fcbaa12.png">
 
@@ -21,8 +25,4 @@ Run `npm start` or `ng serve` for a dev server. Navigate to `http://localhost:42
 
 https://user-images.githubusercontent.com/115761635/195747206-eef45b31-ef98-46ac-97e1-f90c7cb34749.mov
 
-
-
-### Working Heroku URL-
- - https://internship-code.herokuapp.com/home
  
