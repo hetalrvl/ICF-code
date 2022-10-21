@@ -23,6 +23,6 @@ https://user-images.githubusercontent.com/115761635/195747206-eef45b31-ef98-46ac
 
 
 
-### GitHub Pages URL-
- - https://hetalrvl.github.io/ICF-code
+### Working Heroku URL-
+ - https://internship-code.herokuapp.com/home
  
